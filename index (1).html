@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rehan Hidayat — Portofolio</title>
+  <meta name="description" content="Portofolio Rehan Hidayat — Mahasiswa Sistem Informasi. Keahlian: Graphic Design, UI/UX, Web, Desain Produk.">
+  <meta name="author" content="Rehan Hidayat">
+  <meta property="og:title" content="Rehan Hidayat — Portofolio">
+  <meta property="og:description" content="Keahlian: Graphic Design, UI/UX, Web, Desain Produk.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="progressTop" class="progress-top" aria-hidden="true"></div>
+
+  <div id="preloader" class="preloader" role="status">
+    <svg viewBox="0 0 120 120" class="loader-svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop stop-color="#06b6d4" offset="0"/>
+          <stop stop-color="#8b5cf6" offset="0.5"/>
+          <stop stop-color="#ff55a3" offset="1"/>
+        </linearGradient>
+      </defs>
+      <circle cx="60" cy="60" r="36" stroke="url(#g1)" stroke-width="10" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#" aria-label="Beranda">
+        <img src="https://avatars.dicebear.com/api/adventurer/rehanhidayat.svg" alt="Avatar Rehan" width="44" height="44" loading="lazy">
+        <span class="brand-name">Rehan Hidayat</span>
+      </a>
+      <nav class="nav" aria-label="Utama">
+        <ul id="navList" class="nav-list">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <button id="themeBtn" class="btn-ghost" aria-pressed="false" aria-label="Toggle tema">🌙</button>
+        <button id="mobileBtn" class="btn-ghost mobile-only" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero" class="hero">
+      <canvas id="meshCanvas" class="mesh-canvas" aria-hidden="true"></canvas>
+      <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
+      <div class="float-shapes" aria-hidden="true">
+        <div class="shape s1"></div>
+        <div class="shape s2"></div>
+        <div class="shape s3"></div>
+      </div>
+      <div id="cursorTrail" class="cursor-trail" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal" data-reveal>
+          <p class="eyebrow">Mahasiswa &bull; Sistem Informasi &mdash; Universitas Komputama</p>
+          <h1 class="hero-title">Halo, saya Rehan Hidayat</h1>
+          <p class="hero-lead">Mahasiswa yang menggabungkan kreativitas dan teknis &mdash; fokus pada <strong>Graphic Design</strong>, <strong>UI/UX</strong>, <strong>Web</strong>, dan <strong>Product Design</strong>.</p>
+          <p class="typing" aria-hidden="true"><span id="typedText"></span><span class="typing-caret">&#9612;</span></p>
+          <div class="cta-row">
+            <a href="#portfolio" class="btn primary ripple">Lihat Karya</a>
+            <a href="#contact" class="btn outline ripple">Hubungi Saya</a>
+            <a class="micro-link" href="https://sites.google.com/view/portofoliorehanhidayat/halaman-muka" target="_blank" rel="noopener">Situs lengkap &#8599;</a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" data-reveal data-tilt>
+          <div class="avatar-wrap">
+            <img class="avatar-img" src="https://avatars.dicebear.com/api/adventurer-neutral/rehanhidayat.svg?background=%23000000" alt="Avatar karakter Rehan" loading="lazy">
+            <div class="avatar-glow"></div>
+          </div>
+          <div class="hero-meta">
+            <h3 class="meta-name">Rehan Hidayat</h3>
+            <p class="meta-desc">Mahasiswa Sistem Informasi &mdash; UI/UX &bull; Graphic &bull; Web</p>
+            <div class="meta-links">
+              <a href="https://instagram.com/rehanhdyat27" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://wa.me/6282116541696" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="https://sites.google.com/view/portofoliorehanhidayat/halaman-muka" target="_blank" rel="noopener">Google Sites</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head reveal" data-reveal>
+        <h2>Tentang Saya</h2>
+        <p class="sub">Menggabungkan riset, estetika, dan implementasi</p>
+      </div>
+      <div class="about-grid">
+        <article class="glass about-card reveal" data-reveal>
+          <h3>Ringkasan</h3>
+          <p>Saya adalah mahasiswa Sistem Informasi yang suka merancang antarmuka yang estetis dan fungsional. Dari riset pengguna, wireframe, prototyping, hingga implementasi web responsif.</p>
+          <h4>Keahlian inti</h4>
+          <ul>
+            <li>Graphic Design &mdash; poster, brand assets</li>
+            <li>UI/UX &mdash; Figma, prototyping, usability testing</li>
+            <li>Web &mdash; HTML, CSS, JS, responsive design</li>
+            <li>Product Design &mdash; user flows, MVP mindset</li>
+          </ul>
+        </article>
+        <aside class="glass about-meta reveal" data-reveal>
+          <h4>Detail</h4>
+          <p><strong>Pendidikan:</strong> S1 Sistem Informasi &mdash; Universitas Komputama</p>
+          <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+          <h4>Tools</h4>
+          <div class="tools">
+            <span>Figma</span><span>Canva</span><span>HTML/CSS</span><span>JS</span><span>Blogspot</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-head reveal" data-reveal>
+        <h2>Keahlian &amp; Tools</h2>
+        <p class="sub">Kombinasi kreativitas dan implementasi teknis</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal" data-reveal>
+          <h4>Graphic Design</h4>
+          <div class="progress" data-value="92"><span></span></div>
+        </div>
+        <div class="skill-card glass reveal" data-reveal>
+          <h4>UI/UX</h4>
+          <div class="progress" data-value="90"><span></span></div>
+        </div>
+        <div class="skill-card glass reveal" data-reveal>
+          <h4>Web (HTML/CSS/JS)</h4>
+          <div class="progress" data-value="84"><span></span></div>
+        </div>
+        <div class="skill-card glass reveal" data-reveal>
+          <h4>Desain Produk</h4>
+          <div class="progress" data-value="78"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section container">
+      <div class="section-head reveal" data-reveal>
+        <h2>Portofolio</h2>
+        <p class="sub">Beberapa karya pilihan</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project glass reveal" data-reveal>
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1526318472351-c75fcf0700b5?q=80&w=1200&auto=format&fit=crop" alt="Figma UI/UX preview" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>Figma &mdash; UI/UX Dashboard</h3>
+            <p>Prototipe dashboard interaktif, design system, dan komponen responsif.</p>
+            <div class="project-actions">
+              <a class="btn sm ripple" href="https://www.figma.com/proto/55btmXG7opN69HgeOKiuOf/Untitled?node-id=0-1&t=8tx5HGkIUev5edH9-1" target="_blank" rel="noopener">Lihat Figma</a>
+              <a class="btn outline sm ripple" href="https://sites.google.com/view/portofoliorehanhidayat/halaman-muka" target="_blank" rel="noopener">Detail</a>
+            </div>
+          </div>
+        </article>
+        <article class="project glass reveal" data-reveal>
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1531497865141-1f1cda6f0c3a?q=80&w=1200&auto=format&fit=crop" alt="QRIS website preview" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>Website QRIS</h3>
+            <p>Website edukasi implementasi QRIS untuk merchant, fokus pada aksesibilitas.</p>
+            <div class="project-actions">
+              <a class="btn sm ripple" href="https://rehanewsasian.blogspot.com/2025/12/perkembangan-transaksi-digital-qris-di.html" target="_blank" rel="noopener">Lihat</a>
+              <a class="btn outline sm ripple" href="#">Live</a>
+            </div>
+          </div>
+        </article>
+        <article class="project glass reveal" data-reveal>
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1542838132-92c5330049e?q=80&w=1200&auto=format&fit=crop" alt="Poster ice cream preview" loading="lazy">
+          </div>
+          <div class="project-body">
+            <h3>Poster &mdash; Ice Cream Promotion</h3>
+            <p>Poster promosi bergaya neon, tipografi tegas, siap dipakai di kampanye media sosial.</p>
+            <div class="project-actions">
+              <a class="btn sm ripple" href="https://sites.google.com/view/portofoliorehanhidayat/halaman-muka" target="_blank" rel="noopener">Lihat Poster</a>
+              <a class="btn outline sm ripple" href="#">Download</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-head reveal" data-reveal>
+        <h2>Kontak</h2>
+        <p class="sub">Terbuka untuk freelance, kolaborasi, dan tugas kampus</p>
+      </div>
+      <div class="contact-grid">
+        <form id="contactForm" class="glass contact-form reveal" data-reveal novalidate>
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" placeholder="Nama Anda" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="email@domain.com" required>
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+          <button type="submit" class="btn primary ripple">Kirim Pesan</button>
+          <p id="formNote" class="form-note" aria-live="polite"></p>
+        </form>
+        <aside class="glass contact-aside reveal" data-reveal>
+          <h3>Cara Menghubungi</h3>
+          <div class="contact-item">
+            <div class="contact-icon">&#128248;</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Instagram</span>
+              <a href="https://instagram.com/rehanhdyat27" target="_blank" rel="noopener" class="contact-item-val">@rehanhdyat27</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#128172;</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">WhatsApp</span>
+              <a href="https://wa.me/6282116541696" target="_blank" rel="noopener" class="contact-item-val">+62 821-1654-1696</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">&#127760;</div>
+            <div class="contact-item-text">
+              <span class="contact-item-label">Google Sites</span>
+              <a href="https://sites.google.com/view/portofoliorehanhidayat/halaman-muka" target="_blank" rel="noopener" class="contact-item-val">Lihat Portofolio &#8599;</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; <span id="year"></span> Rehan Hidayat &mdash; Mahasiswa Sistem Informasi</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#portfolio">Karya</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
